@@ -1,0 +1,12 @@
+# Define the function linear_search_product
+def linear_search_product(products, target):
+    # Initialize an empty list to store the indices of the target product
+    indices = []
+    # Loop through the products list using enumerate to get the index and value
+    for index, product in enumerate(products):
+        # Check if the product name matches the target name
+        if product == target:
+            # Append the index to the indices list
+            indices.append(index)
+    # Return the indices list
+    return indices
